@@ -5,7 +5,7 @@ import Header from "./component/Header";
 import Hero from "./component/Hero.jsx";
 import About from "./component/About.jsx";
 import Skill from "./component/Skill.jsx";
-import Project from "./component/project.jsx";
+import Project from "./component/Project.jsx";
 import Contact from "./component/Contact.jsx";
 import Footer from "./component/Footer.jsx";
 import Resume from "./component/Resume.jsx";
