@@ -34,7 +34,7 @@ hover:shadow-2xl hover:-translate-y-1 transition duration-300">
           <span className="text-sm">Code</span>
         </a>
 
-        <a href={"https://nova-share-1.onrender.com"} target="_blank" rel="noopener noreferrer"
+        <a href={"https://nova-share-tau.vercel.app"} target="_blank" rel="noopener noreferrer"
           className="flex items-center gap-2 px-3 py-2 bg-blue-100 text-blue-600 rounded-lg hover:shadow-md hover:scale-105 transition">
           <ExternalLink size={18} />
           <span className="text-sm">Live</span>
@@ -43,11 +43,7 @@ hover:shadow-2xl hover:-translate-y-1 transition duration-300">
     </div>
 
     <p className="text-gray-600 mb-4 leading-relaxed">
-      Developed a full-stack secure file sharing web application using React.js and Node.js with Express.
-      Users can register, upload files to the cloud, and share them via unique short links with optional
-      password protection. Features a personal dashboard with upload statistics, file management,
-      and a profile section. Built with JWT-based authentication, Cloudinary for cloud storage,
-      and MongoDB for persistent data management.
+      Developed a full-stack secure file sharing web application using React.js, Node.js, Express, and integrated Groq's Llama 3.3 AI for intelligent file search and summarization. Users can register, upload files to the cloud, and share them via unique short links with optional password protection. Features a personal dashboard with AI-powered smart search, file summarization, upload statistics, file management, and a profile section. Built with JWT-based authentication, Cloudinary for cloud storage, and MongoDB for persistent data management.
     </p>
 
     <p className="text-green-600 font-medium mb-4">
@@ -97,7 +93,7 @@ hover:shadow-2xl hover:-translate-y-1 transition duration-300">
             </div>
 
             <p className="text-gray-600 mb-4 leading-relaxed">
-              Developed a secure digital journal application using React.js and Node.js with Express.
+              Built a secure digital journal application using React.js and Node.js with Express.
               Users can create, edit, and delete personal journal entries with full authentication
               and privacy protection. Features JWT-based authentication with secure HTTP cookies,
               Redux Toolkit for state management, and MongoDB for persistent storage with server-side validation.
@@ -150,10 +146,7 @@ hover:shadow-2xl hover:-translate-y-1 transition duration-300">
             </div>
 
             <p className="text-gray-600 mb-4 leading-relaxed">
-              Developed an AI-powered Resume Analyzer using React and Tailwind CSS with a backend powered by Puter AI.
-              Users can upload resumes and receive intelligent feedback based on job descriptions.
-              The system analyzes strengths, weaknesses, and provides actionable suggestions to improve job readiness.
-              Built with React Router for smooth multi-page navigation.
+               Developed an AI-powered Resume Analyzer using React.js, Tailwind CSS, and Puter AI integration. Users upload resumes and receive intelligent feedback tailored to specific job descriptions. Analyzes strengths, weaknesses, and provides actionable improvement suggestions to enhance job readiness. Implemented multi-page navigation using React Router with a clean, responsive UI.
             </p>
 
             <p className="text-green-600 font-medium mb-4">
