@@ -93,10 +93,7 @@ hover:shadow-2xl hover:-translate-y-1 transition duration-300">
             </div>
 
             <p className="text-gray-600 mb-4 leading-relaxed">
-              Built a secure digital journal application using React.js and Node.js with Express.
-              Users can create, edit, and delete personal journal entries with full authentication
-              and privacy protection. Features JWT-based authentication with secure HTTP cookies,
-              Redux Toolkit for state management, and MongoDB for persistent storage with server-side validation.
+             Built a full-stack MERN personal journal app with a RAG-based AI assistant that answers questions about your journal entries using semantic search. Features JWT authentication with HTTP-only cookies, Redux Toolkit (RTK Query) for state management, and MongoDB for persistent storage. Integrated Qdrant vector database and OpenRouter LLM to enable context-aware journal querying with zero hallucination.
             </p>
 
             <p className="text-green-600 font-medium mb-4">
