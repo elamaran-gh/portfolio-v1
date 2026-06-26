@@ -14,57 +14,109 @@ const Project = () => {
       {/* wrapper */}
       <div className="flex flex-col gap-10">
 
-        {/* Card 1 */}
-<div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden 
+        {/* Card 1 - DevMind */}
+        <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden 
 hover:shadow-2xl hover:-translate-y-1 transition duration-300">
 
-  <img src="/novashare.png" alt="NovaShare"  className="w-full h-56 object-cover blur-[2px] scale-105" />
+          <img src="/devmind.png" alt="DevMind" className="w-full h-56 object-cover blur-[2px] scale-105" />
 
-  <div className="p-6">
+          <div className="p-6">
 
-    <div className="flex justify-between items-center mb-4">
-      <h2 className="text-2xl font-semibold">
-        NovaShare (Secure File Sharing Platform)
-      </h2>
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-2xl font-semibold">
+                DevMind (AI Agent for Developer Debugging)
+              </h2>
 
-      <div className="flex gap-3">
-        <a href={"https://github.com/elamaran-gh/Nova-Share"} target="_blank" rel="noopener noreferrer"
-          className="flex items-center gap-2 px-3 py-2 bg-gray-100 rounded-lg hover:shadow-md hover:scale-105 transition">
-          <GitBranchPlus size={18} />
-          <span className="text-sm">Code</span>
-        </a>
+              <div className="flex gap-3">
+                <a href={"https://github.com/elamaran-gh/DevMind"} target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-3 py-2 bg-gray-100 rounded-lg hover:shadow-md hover:scale-105 transition">
+                  <GitBranchPlus size={18} />
+                  <span className="text-sm">Code</span>
+                </a>
 
-        <a href={"https://nova-share-tau.vercel.app"} target="_blank" rel="noopener noreferrer"
-          className="flex items-center gap-2 px-3 py-2 bg-blue-100 text-blue-600 rounded-lg hover:shadow-md hover:scale-105 transition">
-          <ExternalLink size={18} />
-          <span className="text-sm">Live</span>
-        </a>
-      </div>
-    </div>
+                <a href={"https://dev-mind-indol.vercel.app"} target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-3 py-2 bg-blue-100 text-blue-600 rounded-lg hover:shadow-md hover:scale-105 transition">
+                  <ExternalLink size={18} />
+                  <span className="text-sm">Live</span>
+                </a>
+              </div>
+            </div>
 
-    <p className="text-gray-600 mb-4 leading-relaxed">
-      Developed a full-stack secure file sharing web application using React.js, Node.js, Express, and integrated Groq's Llama 3.3 AI for intelligent file search and summarization. Users can register, upload files to the cloud, and share them via unique short links with optional password protection. Features a personal dashboard with AI-powered smart search, file summarization, upload statistics, file management, and a profile section. Built with JWT-based authentication, Cloudinary for cloud storage, and MongoDB for persistent data management.
-    </p>
+            <p className="text-gray-600 mb-4 leading-relaxed">
+              Built a full-stack AI agent application that helps developers debug code autonomously. Connect your GitHub repo and describe your bug — the agent reads your actual code files, checks recent commits, searches the web, and returns an exact fix with file name and line number. Implemented the ReAct (Reason + Act) pattern with Groq tool calling, where the LLM decides which tools to use rather than following a hardcoded flow. Solutions are automatically saved to a per-project notes panel.
+            </p>
 
-    <p className="text-green-600 font-medium mb-4">
-      ✔ Enables users to securely upload, manage, and share files with anyone via protected short links
-    </p>
+            <p className="text-green-600 font-medium mb-4">
+              ✔ AI agent autonomously reads your GitHub code, searches the web, and gives exact bug fixes with file and line number
+            </p>
 
-    <div className="flex flex-wrap gap-3">
-      <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">React</span>
-      <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">Tailwind CSS</span>
-      <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">Redux Toolkit</span>
-      <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">Node.js</span>
-      <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">Express.js</span>
-      <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">MongoDB</span>
-      <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">Cloudinary</span>
-      <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">JWT</span>
-    </div>
+            <div className="flex flex-wrap gap-3">
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">React</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">Tailwind CSS</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">Redux Toolkit</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">Node.js</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">Express.js</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">MongoDB</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">Groq AI</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">ReAct Agent</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">Tool Calling</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">JWT</span>
+            </div>
 
-  </div>
-</div>
+          </div>
+        </div>
 
         {/* Card 2 */}
+        <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden 
+hover:shadow-2xl hover:-translate-y-1 transition duration-300">
+
+          <img src="/novashare.png" alt="NovaShare" className="w-full h-56 object-cover blur-[2px] scale-105" />
+
+          <div className="p-6">
+
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-2xl font-semibold">
+                NovaShare (Secure File Sharing Platform)
+              </h2>
+
+              <div className="flex gap-3">
+                <a href={"https://github.com/elamaran-gh/Nova-Share"} target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-3 py-2 bg-gray-100 rounded-lg hover:shadow-md hover:scale-105 transition">
+                  <GitBranchPlus size={18} />
+                  <span className="text-sm">Code</span>
+                </a>
+
+                <a href={"https://nova-share-tau.vercel.app"} target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-3 py-2 bg-blue-100 text-blue-600 rounded-lg hover:shadow-md hover:scale-105 transition">
+                  <ExternalLink size={18} />
+                  <span className="text-sm">Live</span>
+                </a>
+              </div>
+            </div>
+
+            <p className="text-gray-600 mb-4 leading-relaxed">
+              Developed a full-stack secure file sharing web application using React.js, Node.js, Express, and integrated Groq's Llama 3.3 AI for intelligent file search and summarization. Users can register, upload files to the cloud, and share them via unique short links with optional password protection. Features a personal dashboard with AI-powered smart search, file summarization, upload statistics, file management, and a profile section. Built with JWT-based authentication, Cloudinary for cloud storage, and MongoDB for persistent data management.
+            </p>
+
+            <p className="text-green-600 font-medium mb-4">
+              ✔ Enables users to securely upload, manage, and share files with anyone via protected short links
+            </p>
+
+            <div className="flex flex-wrap gap-3">
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">React</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">Tailwind CSS</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">Redux Toolkit</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">Node.js</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">Express.js</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">MongoDB</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">Cloudinary</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">JWT</span>
+            </div>
+
+          </div>
+        </div>
+
+        {/* Card 3 */}
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden 
 hover:shadow-2xl hover:-translate-y-1 transition duration-300">
 
@@ -93,7 +145,7 @@ hover:shadow-2xl hover:-translate-y-1 transition duration-300">
             </div>
 
             <p className="text-gray-600 mb-4 leading-relaxed">
-             Built a full-stack MERN personal journal app with a RAG-based AI assistant that answers questions about your journal entries using semantic search. Features JWT authentication with HTTP-only cookies, Redux Toolkit (RTK Query) for state management, and MongoDB for persistent storage. Integrated Qdrant vector database and OpenRouter LLM to enable context-aware journal querying with zero hallucination.
+              Built a full-stack MERN personal journal app with a RAG-based AI assistant that answers questions about your journal entries using semantic search. Features JWT authentication with HTTP-only cookies, Redux Toolkit (RTK Query) for state management, and MongoDB for persistent storage. Integrated Qdrant vector database and OpenRouter LLM to enable context-aware journal querying with zero hallucination.
             </p>
 
             <p className="text-green-600 font-medium mb-4">
@@ -114,11 +166,11 @@ hover:shadow-2xl hover:-translate-y-1 transition duration-300">
           </div>
         </div>
 
-        {/* Card 3  */}
+        {/* Card 4  */}
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden 
         hover:shadow-2xl hover:-translate-y-1 transition duration-300">
 
-          <img src="/resumind.png" alt="AI Resume Analyzer"  className="w-full h-56 object-cover blur-[2px] scale-105" />
+          <img src="/resumind.png" alt="AI Resume Analyzer" className="w-full h-56 object-cover blur-[2px] scale-105" />
 
           <div className="p-6">
 
@@ -143,7 +195,7 @@ hover:shadow-2xl hover:-translate-y-1 transition duration-300">
             </div>
 
             <p className="text-gray-600 mb-4 leading-relaxed">
-               Developed an AI-powered Resume Analyzer using React.js, Tailwind CSS, and Puter AI integration. Users upload resumes and receive intelligent feedback tailored to specific job descriptions. Analyzes strengths, weaknesses, and provides actionable improvement suggestions to enhance job readiness. Implemented multi-page navigation using React Router with a clean, responsive UI.
+              Developed an AI-powered Resume Analyzer using React.js, Tailwind CSS, and Puter AI integration. Users upload resumes and receive intelligent feedback tailored to specific job descriptions. Analyzes strengths, weaknesses, and provides actionable improvement suggestions to enhance job readiness. Implemented multi-page navigation using React Router with a clean, responsive UI.
             </p>
 
             <p className="text-green-600 font-medium mb-4">
@@ -161,11 +213,11 @@ hover:shadow-2xl hover:-translate-y-1 transition duration-300">
           </div>
         </div>
 
-        {/* Card 4 */}
+        {/* Card 5 */}
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden 
         hover:shadow-2xl hover:-translate-y-1 transition duration-300">
 
-          <img src="/credix.png" alt="Credix-Sphere"  className="w-full h-56 object-cover blur-[2px] scale-105"/>
+          <img src="/credix.png" alt="Credix-Sphere" className="w-full h-56 object-cover blur-[2px] scale-105" />
 
           <div className="p-6">
 
@@ -207,11 +259,11 @@ hover:shadow-2xl hover:-translate-y-1 transition duration-300">
           </div>
         </div>
 
-        {/* Card 5 */}
+        {/* Card 6 */}
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden 
         hover:shadow-2xl hover:-translate-y-1 transition duration-300">
 
-          <img src="/govpath.png" alt="Aspirant Compass"  className="w-full h-56 object-cover blur-[2px] scale-105" />
+          <img src="/govpath.png" alt="Aspirant Compass" className="w-full h-56 object-cover blur-[2px] scale-105" />
 
           <div className="p-6">
 
@@ -254,7 +306,7 @@ hover:shadow-2xl hover:-translate-y-1 transition duration-300">
           </div>
         </div>
 
-        {/* Card 6 */}
+        {/* Card 7 */}
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden 
         hover:shadow-2xl hover:-translate-y-1 transition duration-300">
 
