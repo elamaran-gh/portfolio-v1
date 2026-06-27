@@ -18,7 +18,7 @@ const Project = () => {
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden 
 hover:shadow-2xl hover:-translate-y-1 transition duration-300">
 
-          <img src="/devmind.png" alt="DevMind" className="w-full h-56 object-cover blur-[2px] scale-105" />
+          <img src="/Devmind.png" alt="DevMind" className="w-full h-56 object-cover blur-[2px] scale-105" />
 
           <div className="p-6">
 
