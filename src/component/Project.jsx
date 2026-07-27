@@ -14,6 +14,58 @@ const Project = () => {
       {/* wrapper */}
       <div className="flex flex-col gap-10">
 
+
+        {/* Card - AgriTech Marketplace */}
+        <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden 
+hover:shadow-2xl hover:-translate-y-1 transition duration-300">
+
+          <img src="/agritech.png" alt="AgriTech Marketplace" className="w-full h-56 object-cover blur-[2px] scale-105" />
+
+          <div className="p-6">
+
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-2xl font-semibold">
+                AgriTech Marketplace (B2B Crop Trading Platform)
+              </h2>
+
+              <div className="flex gap-3">
+                <a href={"https://github.com/elamaran-gh/AgriTech-Marketplace"} target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-3 py-2 bg-gray-100 rounded-lg hover:shadow-md hover:scale-105 transition">
+                  <GitBranchPlus size={18} />
+                  <span className="text-sm">Code</span>
+                </a>
+
+                <a href={"https://agri-tech-marketplace-coral.vercel.app"} target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-3 py-2 bg-blue-100 text-blue-600 rounded-lg hover:shadow-md hover:scale-105 transition">
+                  <ExternalLink size={18} />
+                  <span className="text-sm">Live</span>
+                </a>
+              </div>
+            </div>
+
+            <p className="text-gray-600 mb-4 leading-relaxed">
+              Built a full-stack MERN marketplace connecting crop farmers and buyers through a bulk-trade enquiry system, instead of a traditional online checkout. Buyers browse crop listings by category, submit purchase enquiries with quantity and delivery details, and admins manage listings and follow up on enquiries in real time from a dashboard. Implemented a strict layered backend architecture — Route, Controller, Service, Repository, Model — with JWT authentication in HTTP-only cookies, Joi request validation, and Cloudinary-based image uploads.
+            </p>
+
+            <p className="text-green-600 font-medium mb-4">
+              ✔ Connects farmers and bulk buyers through a validated enquiry workflow, with role-based admin and buyer dashboards
+            </p>
+
+            <div className="flex flex-wrap gap-3">
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">React</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">Tailwind CSS</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">Redux Toolkit (RTK Query)</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">Node.js</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">Express.js</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">MongoDB</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">Cloudinary</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">JWT</span>
+              <span className="px-3 py-1 bg-gray-100 text-blue-600 rounded-lg text-sm">Joi Validation</span>
+            </div>
+
+          </div>
+        </div>
+
         {/* Card 1 - DevMind */}
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden 
 hover:shadow-2xl hover:-translate-y-1 transition duration-300">
